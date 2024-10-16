@@ -1,8 +1,13 @@
-var numpl = parseInt(prompt("Quantos Jogadores?"), 10);
+//var numpl = parseInt(prompt("Quantos Jogadores?"), 10);
+//Use above for actual games!!
+
+var numpl = 5;
 var counter = 0
 var counter1 = 0
 var count6 = numpl-1;
-var jogadores = []
+//var jogadores = []
+//Also this!!
+var jogadores = ["Eddie", "Freddie", "Nessie", "Reggie", "Bob"]
 var pontos = []
 var pergunta = [
     "Qual minha idade?",
@@ -311,11 +316,13 @@ function passar(){
     }
 }
 
-while (counter < numpl){
-    jogadores.push(prompt("insira o nome do " + (counter+1) + "° jogador."));
-    pontos.push(0);
-    counter++;
-}
+//while (counter < numpl){
+//    jogadores.push(prompt("insira o nome do " + (counter+1) + "° jogador."));
+//    pontos.push(0);
+//    counter++;
+//}
+
+//And This!
 
 var passa1 = 0;
 
