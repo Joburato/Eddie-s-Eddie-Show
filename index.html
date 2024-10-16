@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>The Eddie's Eddie Show</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="imagens/icon.png">    
+    </head>
+
+    <body>
+        <button class="comecar" onclick="passar()">começar</button>
+        
+
+        <div class="pontos">
+            <h1 id="player"></h1>
+            <p id="pontos"></p>
+        </div>
+
+        <div class="titulos" id="titulos1">
+            <h>Geral</h>
+            <h>Relações</h>
+            <h>Histórias</h>
+        </div>
+
+        <div class="titulos" id="titulos2" style="left: 132.15%">
+            <h>Geral</h>
+            <h style="font-size: 24px;">verdadeiro ou falso</h>
+            <h style="font-size: 32px;">James a. janisse</h>
+        </div>
+
+        <div class="titulos" id="titulos3" style="left: 132.15%">
+            <h>Geral</h>
+            <h>feitos</h>
+            <h>gostos</h>
+        </div>
+
+        <div class="titulos" id="titulos4" style="left: 132.15%">
+            <h>bônus</h>
+            <h >bônus</h>
+            <h >bônus</h>
+        </div>
+
+
+        <div class="grid" id="grid1">
+                
+            <img class="p11" src="imagens/200.png" onclick="exibe(0); this.src='imagens/200c.png'">
+            <img class="p11" src="imagens/200.png" onclick="exibe(1); this.src='imagens/200c.png'">
+            <img class="p11" src="imagens/200.png" onclick="exibe(2); this.src='imagens/200c.png'">
+            <img class="p11" src="imagens/300.png" onclick="exibe(3); this.src='imagens/300c.png'">
+            <img class="p11" src="imagens/300.png" onclick="exibe(4); this.src='imagens/300c.png'">
+            <img class="p11" src="imagens/300.png" onclick="exibe(5); this.src='imagens/300c.png'">
+            <img class="p11" src="imagens/400.png" onclick="exibe(6); this.src='imagens/400c.png'">
+            <img class="p11" src="imagens/400.png" onclick="exibe(7); this.src='imagens/400c.png'">
+            <img class="p11" src="imagens/400.png" onclick="exibe(8); this.src='imagens/400c.png'">
+            <img class="p11" src="imagens/500.png" onclick="exibe(9); this.src='imagens/500c.png'">
+            <img class="p11" src="imagens/500.png" onclick="exibe(10); this.src='imagens/500c.png'">
+            <img class="p11" src="imagens/500.png" onclick="exibe(11); this.src='imagens/500c.png'">
+
+        </div>  
+
+        <div class="grid" id="grid2" style="left: 132.15%">
+                
+            <img class="p11" src="imagens/200.png" onclick="exibe(12); this.src='imagens/200c.png'">
+            <img class="p11" src="imagens/200.png" onclick="exibe(13); this.src='imagens/200c.png'">
+            <img class="p11" src="imagens/200.png" onclick="exibe(14); this.src='imagens/200c.png'">
+            <img class="p11" src="imagens/300.png" onclick="exibe(15); this.src='imagens/300c.png'">
+            <img class="p11" src="imagens/300.png" onclick="exibe(16); this.src='imagens/300c.png'">
+            <img class="p11" src="imagens/300.png" onclick="exibe(17); this.src='imagens/300c.png'">
+            <img class="p11" src="imagens/400.png" onclick="exibe(18); this.src='imagens/400c.png'">
+            <img class="p11" src="imagens/400.png" onclick="exibe(19); this.src='imagens/400c.png'">
+            <img class="p11" src="imagens/400.png" onclick="exibe(20); this.src='imagens/400c.png'">
+            <img class="p11" src="imagens/500.png" onclick="exibe(21); this.src='imagens/500c.png'">
+            <img class="p11" src="imagens/500.png" onclick="exibe(22); this.src='imagens/500c.png'">
+            <img class="p11" src="imagens/500.png" onclick="exibe(23); this.src='imagens/500c.png'">
+
+        </div>  
+
+        <div class="grid" id="grid3" style="left: 132.15%">
+                
+            <img class="p11" src="imagens/200.png" onclick="exibe(24); this.src='imagens/200c.png'">
+            <img class="p11" src="imagens/200.png" onclick="exibe(25); this.src='imagens/200c.png'">
+            <img class="p11" src="imagens/200.png" onclick="exibe(26); this.src='imagens/200c.png'">
+            <img class="p11" src="imagens/300.png" onclick="exibe(27); this.src='imagens/300c.png'">
+            <img class="p11" src="imagens/300.png" onclick="exibe(28); this.src='imagens/300c.png'">
+            <img class="p11" src="imagens/300.png" onclick="exibe(29); this.src='imagens/300c.png'">
+            <img class="p11" src="imagens/400.png" onclick="exibe(30); this.src='imagens/400c.png'">
+            <img class="p11" src="imagens/400.png" onclick="exibe(31); this.src='imagens/400c.png'">
+            <img class="p11" src="imagens/400.png" onclick="exibe(32); this.src='imagens/400c.png'">
+            <img class="p11" src="imagens/500.png" onclick="exibe(33); this.src='imagens/500c.png'">
+            <img class="p11" src="imagens/500.png" onclick="exibe(34); this.src='imagens/500c.png'">
+            <img class="p11" src="imagens/500.png" onclick="exibe(35); this.src='imagens/500c.png'">
+
+        </div>  
+
+        <div class="grid" id="grid4" style="left: 132.15%">
+                
+            <img class="p11" src="imagens/200.png" onclick="exibe(36); this.src='imagens/200c.png'">
+            <img class="p11" src="imagens/200.png" onclick="exibe(37); this.src='imagens/200c.png'">
+            <img class="p11" src="imagens/200.png" onclick="exibe(38); this.src='imagens/200c.png'">
+            <img class="p11" src="imagens/300.png" onclick="exibe(39); this.src='imagens/300c.png'">
+            <img class="p11" src="imagens/300.png" onclick="exibe(40); this.src='imagens/300c.png'">
+            <img class="p11" src="imagens/300.png" onclick="exibe(41); this.src='imagens/300c.png'">
+            <img class="p11" src="imagens/400.png" onclick="exibe(42); this.src='imagens/400c.png'">
+            <img class="p11" src="imagens/400.png" onclick="exibe(43); this.src='imagens/400c.png'">
+            <img class="p11" src="imagens/400.png" onclick="exibe(44); this.src='imagens/400c.png'">
+            <img class="p11" src="imagens/500.png" onclick="exibe(45); this.src='imagens/500c.png'">
+            <img class="p11" src="imagens/500.png" onclick="exibe(46); this.src='imagens/500c.png'">
+            <img class="p11" src="imagens/500.png" onclick="exibe(47); this.src='imagens/500c.png'">
+
+        </div>  
+
+        <div class="score" id="score" style="left: 1608px">
+            
+            <div class="fodder"></div>
+            <h1 style="font-size: 50px;">Pontuações</h1>
+            <div class="fodder"></div>
+            
+            
+            <div class="score-grid">
+
+                <div id="sc0" class="scpl">
+                    <h1 id="scpl0"></h1>
+                    <p id="scp0"></p>
+                </div>
+
+                <div id="sc1" class="scpl">
+                    <h1 id="scpl1"></h1>
+                    <p id="scp1"></p>
+                </div>
+
+                <div id="sc2" class="scpl">
+                    <h1 id="scpl2"></h1>
+                    <p id="scp2"></p>
+                </div>
+
+                <div id="sc3" class="scpl">
+                    <h1 id="scpl3"></h1>
+                    <p id="scp3"></p>
+                </div>
+
+                <div id="sc4" class="scpl">
+                    <h1 id="scpl4"></h1>
+                    <p id="scp4"></p>
+                </div>
+
+                <div id="sc5" class="scpl">
+                    <h1 id="scpl5"></h1>
+                    <p id="scp5"></p>
+                </div>
+
+                <div id="sc6" class="scpl">
+                    <h1 id="scpl6"></h1>
+                    <p id="scp6"></p>
+                </div>
+
+                <div id="sc7" class="scpl">
+                    <h1 id="scpl7"></h1>
+                    <p id="scp7"></p>
+                </div>
+
+                <div id="sc8" class="scpl">
+                    <h1 id="scpl8"></h1>
+                    <p id="scp8"></p>
+                </div>
+
+                <div id="sc9" class="scpl">
+                    <h1 id="scpl9"></h1>
+                    <p id="scp9"></p>
+                </div>
+
+                <div id="sc10" class="scpl">
+                    <h1 id="scpl10"></h1>
+                    <p id="scp10"></p>
+                </div>
+
+                <div id="sc11" class="scpl">
+                    <h1 id="scpl11"></h1>
+                    <p id="scp11"></p>
+                </div>
+
+                <div id="sc12" class="scpl">
+                    <h1 id="scpl12"></h1>
+                    <p id="scp12"></p>
+                </div>
+
+                <div id="sc13" class="scpl">
+                    <h1 id="scpl13"></h1>
+                    <p id="scp13"></p>
+                </div>
+
+                <div id="sc14" class="scpl">
+                    <h1 id="scpl14"></h1>
+                    <p id="scp14"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="score" id="score2" style="left: 1608px">
+            
+            <div class="fodder"></div>
+            <h1 style="font-size: 50px;">Pontuações</h1>
+            <div class="fodder"></div>
+            
+            
+            <div class="score-grid">
+
+                <div id="scn0" class="scpl">
+                    <h1 id="scpln0"></h1>
+                    <p id="scpn0"></p>
+                </div>
+
+                <div id="scn1" class="scpl">
+                    <h1 id="scpln1"></h1>
+                    <p id="scpn1"></p>
+                </div>
+
+                <div id="scn2" class="scpl">
+                    <h1 id="scpln2"></h1>
+                    <p id="scpn2"></p>
+                </div>
+
+                <div id="scn3" class="scpl">
+                    <h1 id="scpln3"></h1>
+                    <p id="scpn3"></p>
+                </div>
+
+                <div id="scn4" class="scpl">
+                    <h1 id="scpln4"></h1>
+                    <p id="scpn4"></p>
+                </div>
+
+                <div id="scn5" class="scpl">
+                    <h1 id="scpln5"></h1>
+                    <p id="scpn5"></p>
+                </div>
+
+                <div id="scn6" class="scpl">
+                    <h1 id="scpln6"></h1>
+                    <p id="scpn6"></p>
+                </div>
+
+                <div id="scn7" class="scpl">
+                    <h1 id="scpln7"></h1>
+                    <p id="scpn7"></p>
+                </div>
+
+                <div id="scn8" class="scpl">
+                    <h1 id="scpln8"></h1>
+                    <p id="scpn8"></p>
+                </div>
+
+                <div id="scn9" class="scpl">
+                    <h1 id="scpln9"></h1>
+                    <p id="scpn9"></p>
+                </div>
+
+                <div id="scn10" class="scpl">
+                    <h1 id="scpln10"></h1>
+                    <p id="scpn10"></p>
+                </div>
+
+                <div id="scn11" class="scpl">
+                    <h1 id="scpln11"></h1>
+                    <p id="scpn11"></p>
+                </div>
+
+                <div id="scn12" class="scpl">
+                    <h1 id="scpln12"></h1>
+                    <p id="scpn12"></p>
+                </div>
+
+                <div id="scn13" class="scpl">
+                    <h1 id="scpln13"></h1>
+                    <p id="scpn13"></p>
+                </div>
+
+                <div id="scn14" class="scpl">
+                    <h1 id="scpln14"></h1>
+                    <p id="scpn14"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="scoref" id="scald" style="left: 1608px">
+            <div class="fodder"></div>
+            Pontuações Finais
+            <div class="fodder"></div>
+
+            <div id="scf0" class="scpf1">
+                <h1 id="scplf0"></h1>
+                <p id="scpf0"></p>
+            </div>
+
+            
+            <div class="fodder"></div>
+            
+            <div class="others">
+                <div id="scf1" class="scpf2">
+                    <h1 id="scplf1"></h1>
+                    <p id="scpf1"></p>
+                </div>
+
+                <div id="scf2" class="scpf3">
+                    <h1 id="scplf2"></h1>
+                    <p id="scpf2"></p>
+                </div>
+            </div>
+
+            
+            <div class="fodder"></div>
+            
+            
+            <div class="scoref-grid">
+                <div id="scf3" class="scpf">
+                    <h1 id="scplf3"></h1>
+                    <p id="scpf3"></p>
+                </div>
+                <div id="scf4" class="scpf">
+                    <h1 id="scplf4"></h1>
+                    <p id="scpf4"></p>
+                </div>
+                <div id="scf5" class="scpf">
+                    <h1 id="scplf5"></h1>
+                    <p id="scpf5"></p>
+                </div>
+                <div id="scf6" class="scpf">
+                    <h1 id="scplf6"></h1>
+                    <p id="scpf6"></p>
+                </div>
+                <div id="scf7" class="scpf">
+                    <h1 id="scplf7"></h1>
+                    <p id="scpf7"></p>
+                </div>
+                <div id="scf8" class="scpf">
+                    <h1 id="scplf8"></h1>
+                    <p id="scpf8"></p>
+                </div>
+                <div id="scf9" class="scpf">
+                    <h1 id="scplf9"></h1>
+                    <p id="scpf9"></p>
+                </div>
+                <div id="scf10" class="scpf">
+                    <h1 id="scplf10"></h1>
+                    <p id="scpf10"></p>
+                </div>
+                <div id="scf11" class="scpf">
+                    <h1 id="scplf11"></h1>
+                    <p id="scpf11"></p>
+                </div>
+                <div id="scf12" class="scpf">
+                    <h1 id="scplf12"></h1>
+                    <p id="scpf12"></p>
+                </div>
+                <div id="scf13" class="scpf">
+                    <h1 id="scplf13"></h1>
+                    <p id="scpf13"></p>
+                </div>
+                <div id="scf14" class="scpf">
+                    <h1 id="scplf14"></h1>
+                    <p id="scpf14"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="perguntas" id="perguntas" style="top: 200%;">
+
+            <figure>
+                <img class="img-btn" src="imagens/xmark-solid.png" onclick="fecha()">
+            </figure>
+
+            <div class="itens">
+                <h1 id="pergunta"></h1>
+                <div class="fodder"></div>
+
+                <div class="respostas">
+                    <div id="options" class="options">
+                        <button class="botaoresposta" id="botaoresposta1" onclick="revelar(1)";></button>
+                        <button class="botaoresposta" id="botaoresposta2" onclick="revelar(2)";></button>
+                        <button class="botaoresposta" id="botaoresposta3" onclick="revelar(3)";></button>
+                        <button class="botaoresposta" id="botaoresposta4" onclick="revelar(4)";></button>
+                    </div>
+
+                    <div id="options1" class="options" style="display: none;">
+                        <button class="botaoresposta" id="botaoresposta11" onclick="revelar1(1)";></button>
+                        <button class="botaoresposta" id="botaoresposta12" onclick="revelar1(2)";></button>
+                        <button class="botaoresposta" id="botaoresposta13" onclick="revelar1(3)";></button>
+                        <button class="botaoresposta" id="botaoresposta14" onclick="revelar1(4)";></button>
+                    </div>
+                    
+                    <div class="opcoes" id="opcoes">
+                        <button id="acerto" class="btnpl1" onclick="certo()">Acerto</button>
+                        <button id="pl0" class="btnpl" onclick="test(0)"></button>
+                        <button id="pl1" class="btnpl" onclick="test(1)"></button>
+                        <button id="pl2" class="btnpl" onclick="test(2)"></button>
+                        <button id="pl3" class="btnpl" onclick="test(3)"></button>
+                        <button id="pl4" class="btnpl" onclick="test(4)"></button>
+                        <button id="pl5" class="btnpl" onclick="test(5)"></button>
+                        <button id="pl6" class="btnpl" onclick="test(6)"></button>
+                        <button id="pl7" class="btnpl" onclick="test(7)"></button>
+                        <button id="pl8" class="btnpl" onclick="test(8)"></button>
+                        <button id="pl9" class="btnpl" onclick="test(9)"></button>
+                        <button id="pl10" class="btnpl" onclick="test(10)"></button>
+                        <button id="pl11" class="btnpl" onclick="test(11)"></button>
+                        <button id="pl12" class="btnpl" onclick="test(12)"></button>
+                        <button id="pl13" class="btnpl" onclick="test(13)"></button>
+                        <button id="pl14" class="btnpl" onclick="test(14)"></button>
+                        <button id="passar" class="btnpl1" onclick="desisti()">Desistir</button>
+                        
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <h1 id="round">Round 1</h1>
+        <button class="passa"onclick="passa()"></button>
+        <button onclick="vai()" class="vai"></button>
+        
+
+        <script src="Script.js"></script>
+    </body>
+</html>
