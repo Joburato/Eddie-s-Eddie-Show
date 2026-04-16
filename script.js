@@ -5,57 +5,250 @@ var count6 = numpl-1;
 var jogadores = []
 var pontos = []
 var pergunta = [
-    "Qual minha idade?",
-    "Quem é atualmente a pessoa que namorei por mais tempo?",
-    "Qual seria originalmente meu nome?",
-    "Qual meu curso?",
-    "Quem é meu parceiro de fofoca?",
-    "Quando eu Conheci Luca?",
-    "Qual minha atual arma de apresentação?",
-    "Qual minha amizade mais antiga?",
-    "Em que mês eu conheci Vic?",
-    "Qual o nome do meu pai?",
-    "Qual a pessoa com quem eu tenho mais mensagens pelo Instagram?",
-    "Por qual artista eu fui no MADA?",
+    "Qual dessas bebidas se tornou minha atual favorita?",
+    "Qual meu jogo favorito?",
+    "Qual meu filme de terror favorito?",
+    "Qual desses quadrinhos eu não possuo?",
+    "Qual desses jogos não está no meu Top 4?",
+    "Quem é o Assassino em Sexta-Feira 13 (1980)?",
+    "Qual o nome do antagonista de Karate Kid 2?",
+    "Qual o nome do personagem principal de Sifu?",
+    "Em apenas um dos filmes de Pânico, o Ghostface é revelado ser apenas uma pessoa, qual esse filme?",
+    "Quem é esse? Anexo 1",
+    "Em qual desses jogos eu não possuo 100% das conquistas?",
+    "Qual meu Reboot favorito?",
+    "Qual o nome do personagem principal de Karate Kid (2010)?",
+    "Em qual obra de Shakespeare o filme '10 Coisas que eu odeio em você' é inspirado?",
+    "Qual meu mito favorito?",
+    "Qual meu quadrinista favorito?",
+    "Qual desses personagens não é do filme 'Trem Bala'?",
+    "Quem sofreu mais?",
+    "Qual desses quadrinhos eu possuo?",
+    "Complete a frase: 'Olá. Meu nome é Inigo Montoya'",
+    "Qual foi o Sétimo trabalho de Héracles?",
+    "Quem é esse? Anexo 2",
+    "Qual desses não está no meu Top 4 do Letterboxd?",
+    "Qual é meu deus grego favorito?",
+    "Qual meu chocolate favorito?",
+    "Qual meu livro favorito do John Green?",
+    "Qual dessas artistas eu não escuto?",
+    "Qual desses não é um dos meus pokémons favoritos?",
+    "Em qual desses contos de Edgar Allan Poe o Detetive Auguste Dupin não aparece?",
+    "Qual minha música favorita?",
+    "Qual o nome da minha skin favorita no Valorant?",
+    "Qual desses quadrinhos não está no meu Top 4?",
+    "Qual dessas músicas eu gosto mais?",
+    "Quem é esse? Anexo 3",
+    "No conto 'O Corvo' de E. A. Poe, qual a única palavra que o corvo é capaz de dizer?",
+    "Qual dessas bandas é minha favorita?",
     "Qual minha série favorita?",
-    "Eu assisti todos os filmes da Marvel.",
-    "Qual o trabalho dele?",
-    "Para qual cidade eu viajei para ir em um Escape Room?",
-    "Eu já fiquei com uma garota Europeia.",
-    "Qual o canal dele no Youtube?",
     "Qual o único grupo alimentício que eu não como?",
-    "Eu Nunca li um quadrinho do Flash Barry Allen.",
-    "Qual o principal quadro dele?",
-    "Qual minha franquia de filmes favorita?",
-    "Eu tenho uma parede só de Post Its",
-    "Qual o maior filme em que ele aparece?",
-    "Quem é meu escritor favorito?",
-    "Qual é essa edição do Eddie’s Eddie Show?",
-    "Qual minha banda favorita?",
-    "Qual meu Deus Grego Favorito?",
-    "Qual minha faixa atual no Kung Fu?",
-    "Qual meu quadrinho favorito?",
-    "Qual foi o último filme de Velozes e Furiosos que eu assisti?",
-    "Qual foi o último site que eu fiz para um cliente?",
-    "Qual livro eu estou lendo no momento?",
+    "Qual minha cor favorita?",
+    "Qual meu Shonnen favorito?",
+    "Qual minha atual faixa no Kung Fu?",
+    "Qual console eu possuo?",
+    "De acordo com 1984 de George Orwell, 2+2=?",
+    "Qual meu livro favorito de Stephen King?",
     "Qual o último filme que eu assisti no cinema?",
-    "Quantos minutos de música eu escutei em 2022?",
-    "What’s my favorite Scary Movie?",
-    "Quem é meu herói favorito?",
-    "Qual a cor das minhas luvas de Boxing?",
-    "Qual meu filme da Marvel Favorito?",
-    "Qual meu Smartphone?",
-    "Qual órgão eu removi?",
-    "Qual foi minha primeira arte marcial?",
-    "Qual meu tipo sanguíneo?",
-    "Qual meu parente mais famoso?",
-    "Qual meu formato de arquivo favorito?",
-    "Qual a citação que eu mais uso?",
-    "Qual órgão eu tenho a mais?",
-    "Qual meu animal favorito?"
+    "Qual o meu personagem com mais horas no Valorant?",
+    "Qual o nome do personagem principal de Karate Kid 4?",
+    "Quem é meu diretor favorito?"
+];  
+var resposta = [
+    "Guaraná Zero",
+    "Pepsi Black",
+    "Coca-Cola Zero",
+    "Suco de laranja",
+    "Cyberpunk 2077",
+    "The Binding of Isaac: Repentance+",
+    "Sifu",
+    "The Walking Dead",
+    "Evil Dead (2013)",
+    "The Thing (1982)",
+    "Scream (1996)",
+    "Scream (2022)",
+    "Imortal Hulk 6",
+    "Reino do Amanhã",
+    "Batman Cavaleiro das Trevas",
+    "Titãs: Robin",
+    "The Walking Dead",
+    "Undertale",
+    "Marvel Spider-Man",
+    "Sifu",
+    "Jason Voorhees",
+    "Freddy Krueger",
+    "Pamela Voorhees",
+    "Michael Myers",
+    "Cheng",
+    "Chozen",
+    "Terry",
+    "Johnny",
+    "Ying",
+    "Chang",
+    "Wong",
+    "Ele não tem um nome",
+    "Pânico 2",
+    "Pânico 3",
+    "Pânico 4",
+    "Pânico 6",
+    "Andrew Koji",
+    "Jason Tobin",
+    "Hoon Lee",
+    "Jackie Chan",
+    "Emily is Away",
+    "Marvel Spider-Man",
+    "Katana Zero",
+    "Speed Dating for Ghosts",
+    "Evil Dead (2013)",
+    "Scream (2022)",
+    "Halloween (2018)",
+    "It (2017)",
+    "Daniel LaRusso",
+    "Li Fong",
+    "Cheng Li",
+    "Dre Parker",
+    "Romeu e Julieta",
+    "A Megera Domada",
+    "A Tempestade",
+    "Hamlet",
+    "Eros e Psiquê",
+    "Hades e Perséfone",
+    "Apolo e Dafne",
+    "Hefesto e Afrodite",
+    "Gabriel Picolo",
+    "Marco Checchetto",
+    "Dan Mora",
+    "Alex Ross",
+    "O Pai",
+    "Tangerina",
+    "Lobo",
+    "Serpente",
+    "Medusa",
+    "Prometeu",
+    "Sísifo",
+    "Atlas",
+    "Demolidor (2022)",
+    "Titãs: Estelar",
+    "Lore Olympus 3",
+    "Superman e a Autoridade",
+    "Você matou meu pai, prepare-se para morrer.",
+    "Você matou minha amada, agora pagará.",
+    "Mas você não lembrará disso.",
+    "E venho em nome do rei da Espanha.",
+    "Hidra de Lerna",
+    "Leão da Nemeia",
+    "Javali de Erimanto",
+    "Touro de Creta",
+    "Brandon Lee",
+    "Heath Ledger",
+    "Jason Momoa",
+    "Keanu Reeves",
+    "Cinema Paradiso",
+    "De Volta para o Futuro",
+    "Karate Kid (2010)",
+    "Trem Bala",
+    "Posidão",
+    "Aidoneus",
+    "Perun",
+    "Menrva",
+    "Branco",
+    "Meio Amargo",
+    "Ao Leite",
+    "Com Amendoim",
+    "A Culpa é das Estrelas",
+    "O Antropoceno Revisado",
+    "Onde Está Você, Alaska?",
+    "Cidades de Papel",
+    "Sophie May",
+    "Lorde",
+    "Chappell Roan",
+    "Taylor Swift",
+    "Toxel",
+    "Oshawott",
+    "Snom",
+    "Piplup",
+    "O Assassinato na Rua Morgue",
+    "O Mistério de Marie Rogêt",
+    "A Carta Roubada",
+    "A Queda da Casa de Usher",
+    "When the Party’s Over – Billie Eilish",
+    "Exagerado – Cazuza",
+    "Bruises & Scratches – Sophie May",
+    "A Grave Mistake – Ice Nine Kills",
+    "Araxys",
+    "Rei do Sol",
+    "Herói Valoroso",
+    "Kuronami no Yaba",
+    "Invencível",
+    "Reino do Amanhã",
+    "A Sombra da Aranha",
+    "Scott Pilgrim",
+    "Naked – Finneas",
+    "A Grave Mistake – Ice Nine Kills",
+    "With the Band – Sophie May",
+    "Indigo Night – Tamino",
+    "James A. Janisse",
+    "Brandon Lee",
+    "Keith Habersberger",
+    "Matthew Mercer",
+    "Nunca Mais (Nevermore)",
+    "Para Sempre (Forever)",
+    "Um Dia (Someday)",
+    "De Acontecer (Befall)",
+    "Måneskin",
+    "Ice Nine Kills",
+    "Panic! At the Disco",
+    "Paramore",
+    "Sherlock",
+    "Cobra Kai",
+    "Looking For Alaska",
+    "Warrior",
+    "Doces",
+    "Laticínios",
+    "Pimentas",
+    "Frutos do Mar",
+    "Vermelho",
+    "Preto",
+    "Roxo",
+    "Laranja",
+    "Dandadan",
+    "One Piece",
+    "Gurren Lagann",
+    "Sword Art Online",
+    "Azul",
+    "Verde",
+    "Amarela",
+    "Roxa",
+    "Nintendo DSi",
+    "PSP",
+    "PS Vita",
+    "Nintendo DS Lite",
+    3,
+    4,
+    5,
+    2,
+    "Misery",
+    "It",
+    "O Iluminado",
+    "Doutor Sono",
+    "Auto da Compadecida 2",
+    "Sonic 3",
+    "Ainda Estou Aqui",
+    "Anora",
+    "Sage",
+    "Gekko",
+    "Sova",
+    "Reyna",
+    "Daniel LaRusso",
+    "Julie Pierce",
+    "Dre Parker",
+    "Li Fong",
+    "Jordan Peele",
+    "Robert Zemeckis",
+    "David Fincher",
+    "John Hughes"
 ];
-var resposta = ["20", "VIC", "EDUARDA", "TI", "ARTHUR", "DIA DOS NAMORADOS", "FACÃO", "DAVI", "JULHO", "DENIS", "LAIS", "POTYGUARA BARDO", "LOOKING FOR ALASKA", "FALSO", "YOUTUBER", "RECIFE", "FALSO", "DEAD MEAT", "FRUTOS DO MAR", "FALSO", "KILL COUNT", "SCREAM", "FALSO", "SCREAM", "JOHN GREEN", "TERCEIRA", "MANESKIN", "HADES", "VERDE", "REINADO DO AMANHÃ", "VELOZES E FURIOSOS 7", "UROGRUPO", "IT", "EVIL DEAD RISE", "70.000", "EVIL DEAD", "HOMEM-ARANHA", "VERMELHO", "NO WAY HOME", "IPHONE 11", "APÊNDICE", "JUDÔ", "O+", "CIRO GOMES", "PNG", "NÃO É SOBRE VENCER, É SOBRE MANDAR UMA MENSAGEM", "BAÇO", "KAKAPO"]
-var correta = [3, 2, 4]
+var correta = [2, 4, 1, 3, 2, 3, 2, 4, 2, 1, 3, 4, 4, 2, 1, 2, 4, 1, 4, 1, 4, 1, 2, 2, 1, 3, 2, 4, 4, 2, 3, 3, 3, 2, 1, 1, 3, 4, 1, 3, 1, 4, 3, 2, 3, 1, 2, 2]
 var lead = 0;
 var log = 3
 var log1 = 3
@@ -79,7 +272,7 @@ function vai(){
         div.style.left = "-132.15%";
 
         var div = document.getElementById("score");
-        div.style.left = "608px";
+        div.style.left = "39.6vw";
     }
 
     if(round == 2){
@@ -91,7 +284,7 @@ function vai(){
         div.style.left = "32.15%";
 
         var div = document.getElementById("score");
-        div.style.left = "-808px";
+        div.style.left = "-52.6vw";
 
         document.getElementById("round").innerHTML = "Round 2";
     }
@@ -105,7 +298,7 @@ function vai(){
         div.style.left = "-132.15%";
 
         var div = document.getElementById("score2");
-        div.style.left = "608px";
+        div.style.left = "39.6vw";
     }
 
     if(round == 4){
@@ -117,7 +310,7 @@ function vai(){
         div.style.left = "32.15%";
 
         var div = document.getElementById("score2");
-        div.style.left = "-808px";
+        div.style.left = "-52.6vw";
 
         document.getElementById("round").innerHTML = "Round 3";
     }
@@ -172,7 +365,7 @@ function vai(){
         document.getElementById("round").innerHTML = "O FINAL";
 
         var div = document.getElementById("scald");
-        div.style.left = "495px";
+        div.style.left = "32.2vw";
     }
 
     if(round > 6){
@@ -194,7 +387,7 @@ function passa(){
         div.style.left = "32%";
 
         var div = document.getElementById("score");
-        div.style.left = "1608px";
+        div.style.left = "104.7vw";
 
         round--;
     }
@@ -208,7 +401,7 @@ function passa(){
         div.style.left = "132.15%";
 
         var div = document.getElementById("score");
-        div.style.left = "608px";
+        div.style.left = "39.6vw";
 
         round--;
 
@@ -224,7 +417,7 @@ function passa(){
         div.style.left = "32%";
 
         var div = document.getElementById("score2");
-        div.style.left = "1608px";
+        div.style.left = "104.7vw";
 
         round--;
     }
@@ -238,7 +431,7 @@ function passa(){
         div.style.left = "132.15%";
 
         var div = document.getElementById("score2");
-        div.style.left = "608px";
+        div.style.left = "39.6vw";
 
         round--;
 
@@ -272,7 +465,7 @@ function passa(){
         div.style.left = "32.15%";
 
         var div = document.getElementById("scald");
-        div.style.left = "1608px";
+        div.style.left = "104.7vw";
 
         document.getElementById("round").innerHTML = "Round B";
 
@@ -362,9 +555,9 @@ function exibe(x){
     contadordeazuis = 0;
     while(contadordeazuis < 4){
         var div = document.getElementById("botaoresposta" + (contadordeazuis+1))
-        div.style.backgroundColor = "rgb(18, 155, 197)";
+        div.style.backgroundColor = "transparent";
         var div = document.getElementById("botaoresposta1" + (contadordeazuis+1))
-        div.style.backgroundColor = "rgb(18, 155, 197)";
+        div.style.backgroundColor = "transparent";
         contadordeazuis++;
     };
 }

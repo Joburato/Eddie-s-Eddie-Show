@@ -25,7 +25,7 @@ body{
     background-image: url("imagens/tela1.png");
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .grid{
@@ -58,8 +58,10 @@ body{
     font-size: 30px;
     text-align: center;
     font-family: 'Rotunda';
+    color: rgb(0, 0, 0);
     font-weight: bold;
 }
+
 
 p{
     font-size: 35px;
@@ -91,11 +93,8 @@ p{
     right: 35px;
     transition: top 500ms;
     border-radius: 50px;
-    box-shadow: 0 0 19px 8px rgba(41,73,215,0.64) inset,
-            0 0 7px 3px #1894e3,
-            0 0 6px 10px #dce7ee,
-            0 0 1px 14px #3158ff,
-            0 0 19px 24px rgba(41,73,215,0.38);
+    box-shadow: 0 0 0 5px #000000,
+            0 0 0 13px #cec8c0;
 }
 
 .itens{
@@ -125,15 +124,12 @@ p{
     background-image: url("imagens/back.png");
     background-size: cover;
     font-family: 'Rotunda';
-    color: white;
+    color: black;
     font-weight: bolder;
     text-align: center;
     font-size: 30px;
-    box-shadow: 0 0 19px 6px rgba(215,41,41,0.57) inset,
-            0 0 7px 1px #e31818,
-            0 0 6px 6px #dce7ee,
-            0 0 1px 10px #ff3131,
-            0 0 19px 19px rgba(215,41,41,0.38);
+    box-shadow: 0 0 0 5px #000000,
+            0 0 0 13px #cec8c0;
 }
 
 .score{
@@ -149,11 +145,8 @@ p{
     height: 70%;
     transition: left 500ms;
     background-image: url("imagens/bib.png");
-    box-shadow: 0 0 19px 6px rgba(53, 41, 215, 3) inset,
-            0 0 7px 1px #1830e3,
-            0 0 6px 6px #dce7ee,
-            0 0 1px 10px #3146ff,
-            0 0 19px 19px rgba(41, 70, 215, 0.38);
+    box-shadow: 0 0 0 5px #000000,
+            0 0 0 13px #cec8c0;
 
 }
 
@@ -176,7 +169,7 @@ p{
     height: 80px;
     background-size: cover;
     font-family: 'Rotunda';
-    color: rgb(255, 255, 255);
+    color: black;
     font-weight: bolder;
     text-align: center;
     font-size: 20px;
@@ -190,7 +183,7 @@ p{
     background-image: url("imagens/back.png");
     background-size: cover;
     font-family: 'Rotunda';
-    color: white;
+    color: black;
     font-weight: bolder;
     text-align: center;
     font-size: 30px;
@@ -208,7 +201,7 @@ p{
     background-color: rgba(255, 255, 255, 0.171);
     font-family: 'Rotunda';
     font-weight: bold;
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 0 19px 6px rgba(41,73,215,0.55) inset,
             0 0 7px 1px #1894e3,
@@ -295,7 +288,7 @@ p{
     font-family: 'Rotunda';
     font-weight: bold;
     font-size: 35px;
-    color: black;
+    color: rgba(136, 23, 23, 0.856);
 }
 
 .img-btn{
@@ -303,7 +296,6 @@ p{
     margin-left: 30px;
     width: 30px;
     height: auto;
-    filter: invert(100%);
 }
 
 .scoref{
@@ -323,11 +315,8 @@ p{
     font-size: 50px;
     background-image: url("imagens/bib.png");
     background-size: cover;
-    box-shadow: 0 0 19px 6px #18e330 inset,
-            0 0 7px 1px #18e330,
-            0 0 6px 6px #dce7ee,
-            0 0 1px 10px #31ff5a,
-            0 0 19px 19px rgba(41, 215, 102, 0.38);
+    box-shadow: 0 0 0 5px #000000,
+            0 0 0 13px #cec8c0;
 
 }
 
@@ -356,7 +345,7 @@ p{
     height: 20px;
     background-size: cover;
     font-family: 'Rotunda';
-    color: rgb(255, 255, 255);
+    color: black;
     font-weight: bolder;
     text-align: center;
     font-size: 20px;
@@ -433,8 +422,10 @@ p{
 .botaoresposta{
     width: 450px;
     height: 220px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 30px;
     font-weight: bold;
     border-radius: 40px;
+    background-color: transparent;
+    border: 5px solid black;
 }
