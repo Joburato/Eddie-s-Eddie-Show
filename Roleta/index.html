@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodada de Jogadores</title>
+    <link rel="stylesheet" href="Rstyles.css">
+</head>
+<body>
+    <div class="tit">
+        <h1 class="titulo">ROLETA</h1>
+    </div>
+    <div class="container">
+        <div class="players">
+            <div id="playersForm">
+                <label for="playerCount">Número de jogadores:</label>
+                <input type="number" id="playerCount" min="1">
+                <button onclick="setPlayers()">Confirmar</button>
+            </div>
+            <div id="playersList" style="display: none;"></div>
+            <div id="playerButtons" class="player-buttons"></div>
+        </div>
+        <div class="roulette-container">
+            <canvas id="canvas" width="500" height="500"></canvas>
+        </div>
+        <div class="buttons">
+            <button onclick="spin()">Girar</button>
+            <button onclick="reset()">Reset</button>
+        </div>
+    </div>
+
+    <script src="Rscript.js"></script>
+</body>
+</html>
