@@ -298,6 +298,27 @@ p{
     height: auto;
 }
 
+.btn-dica{
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    border-radius: 5px;
+    height: 40px;
+    padding: 3px;
+    background-image: url("imagens/back.png");
+    background-size: cover;
+    font-family: 'Rotunda';
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 25px;
+    box-shadow: 0 0 19px 6px rgba(215, 183, 41, 0.57) inset,
+            0 0 7px 1px #e3b218,
+            0 0 6px 6px #dce7ee,
+            0 0 1px 10px #ffd031,
+            0 0 19px 19px rgba(215, 177, 41, 0.38);
+}
+
 .scoref{
     z-index: 12;
     position: fixed;

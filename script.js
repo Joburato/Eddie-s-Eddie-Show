@@ -4,6 +4,7 @@ var counter1 = 0
 var count6 = numpl-1;
 var jogadores = []
 var pontos = []
+var dicaGratisUsada = []
 var pergunta = [
     "Qual dessas bebidas se tornou minha atual favorita?",
     "Qual meu jogo favorito?",
@@ -507,6 +508,7 @@ function passar(){
 while (counter < numpl){
     jogadores.push(prompt("insira o nome do " + (counter+1) + "° jogador."));
     pontos.push(0);
+    dicaGratisUsada.push(false);
     counter++;
 }
 
@@ -551,6 +553,7 @@ function exibe(x){
     
     var div = document.getElementById("perguntas");
     div.style.top = "20px";
+    document.getElementById("btn-dica").style.display = "block";
 
     contadordeazuis = 0;
     while(contadordeazuis < 4){
@@ -588,6 +591,7 @@ function getDescendingIndexes(arr) {
 }
 
 function revelar(reveal){
+    document.getElementById("btn-dica").style.display = "none";
     
     if(reveal == correta[log]){
         correto.play();
@@ -632,6 +636,20 @@ function test(x){
 
     var div = document.getElementById("opcoes");
     div.style.display = "none";
+}
+
+function dica(){
+    if (dicaGratisUsada[counter1-1] === false) {
+        dicaGratisUsada[counter1-1] = true;
+    } else {
+        pontos[counter1-1] -= (pont[log] / 2);
+    
+        document.getElementById("pontos").innerHTML = pontos[counter1-1];
+        document.getElementById("scp" + (counter1-1)).innerHTML = pontos[counter1-1];
+        document.getElementById("scpn" + (counter1-1)).innerHTML = pontos[counter1-1];
+    }
+
+    document.getElementById("btn-dica").style.display = "none";
 }
 
 function revelar1(reveal){
